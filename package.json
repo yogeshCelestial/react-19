@@ -1,0 +1,17 @@
+{
+  "name": "react-19",
+  "version": "1.0.0",
+  "description": "This is a Testing React Application",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Yogesh Chaudhary",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}
