@@ -17,3 +17,5 @@ Just a dummy application to test out react and friends.
 - Diagnostics
 - Error Handling
 - HTTPS
+- Tree Shaking
+- Different dev and prod bundles
