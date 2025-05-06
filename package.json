@@ -2,7 +2,13 @@
   "name": "react-19",
   "version": "1.0.0",
   "description": "This is a Testing React Application",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yogeshCelestial/react-19.git"
+  },
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "Yogesh Chaudhary",
