@@ -2,7 +2,9 @@
 
 Just a dummy application to test out react and friends.
 
-# Parcel
+## Parcel
+
+Parcel is a module bundler(bundles javascript and friends) that gives a lot of feature as follows-
 
 - Dev Build
 - Local Server
