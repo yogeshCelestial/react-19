@@ -1,5 +1,6 @@
 import React from "react";
-import { General, Shorthand } from "./src/components/Components";
+import { General, Shorthand } from "./components/Components";
+import Counter from "./components/Counter";
 
 // The App component is the main component of the application.
 // We can consuder it as the root of react tree.
@@ -7,10 +8,12 @@ import { General, Shorthand } from "./src/components/Components";
 
 // Placing a component inside another component is called composition.
 const App = () => {
+  const [count, setCount] = React.useState(0);
   return (
     <div>
       <Shorthand />
       <General />
+      <Counter count={count} setCount={setCount} />
     </div>
   );
 };
