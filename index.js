@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import App from './src/App';
 import React from 'react';
+import { BrowserRouter } from "react-router-dom";
 
 const elem = document.getElementById('root');
 
@@ -13,4 +14,9 @@ const jsxHeading = <h1 id='heading'>Hello World!</h1>;
 // root.render(heading);
 // heading and jsxHeading are the same, both gives you React elements
 
-root.render(<App />);
+root.render(
+    // adding future attributes to false to remove console warning
+  <BrowserRouter future={{ v7_startTransition: false, v7_relativeSplatPath: false }}>
+    <App />
+  </BrowserRouter>
+);

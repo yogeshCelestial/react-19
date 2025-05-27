@@ -5,7 +5,6 @@
 // Both of these components do the same thing.
 
 const Shorthand = () => (
-  console.log("Shorthand Rendering =>"),
   <h1>This is a shorthand syntax to write Functional Components</h1>
 );
 
