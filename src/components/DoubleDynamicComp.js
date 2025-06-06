@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 const DoubleDynamicHandler = () => {
   const params = useParams();
   console.log(params);
+  console.log("Double Dynamic Rendering");
   return (
     <>
       <h1>Dynamic param one is - {params.routeParam1}</h1>

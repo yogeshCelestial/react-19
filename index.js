@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom/client';
 import App from './src/App';
 import React from 'react';
-import { BrowserRouter } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
+import { router } from './src/Router';
 
 const elem = document.getElementById('root');
 
@@ -16,7 +17,5 @@ const jsxHeading = <h1 id='heading'>Hello World!</h1>;
 
 root.render(
     // adding future attributes to false to remove console warning
-  <BrowserRouter future={{ v7_startTransition: false, v7_relativeSplatPath: false }}>
-    <App />
-  </BrowserRouter>
+  <RouterProvider router={router} fallbackElement={<h1>Loading...</h1>} future={{ v7_startTransition: true, v7_normalizeFormMethod: true }} />
 );
