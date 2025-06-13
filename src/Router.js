@@ -6,6 +6,7 @@ import ReducerComp from "./components/Reducer";
 import Memo from "./components/Memo";
 import WithFooterLayout from "./components/Footer";
 import UseCallbackComp from "./components/UseCallback";
+import SuspenseLazy from "./components/SuspenseLazy";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,14 @@ const router = createBrowserRouter([
     element: (
       <WithFooterLayout>
         <UseCallbackComp />
+      </WithFooterLayout>
+    ),
+  },
+  {
+    path: "/suspenseLazy",
+    element: (
+      <WithFooterLayout>
+        <SuspenseLazy />
       </WithFooterLayout>
     ),
   },

@@ -12,6 +12,7 @@ const App = () => {
       <Component />
       <Typography variant="h5">See Example of - </Typography>
       <ul>
+        <h3>Hooks - </h3>
         <li>
           <Link to="/useReducer">useReducer</Link>
         </li>
@@ -20,6 +21,10 @@ const App = () => {
         </li>
         <li>
           <Link to="/useCallback">useCallback & React.memo</Link>
+        </li>
+        <h3>React APIs</h3>
+        <li>
+          <Link to="/suspenseLazy">Suspense & Lazy</Link>
         </li>
       </ul>
     </div>
