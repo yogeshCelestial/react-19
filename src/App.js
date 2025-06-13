@@ -1,4 +1,5 @@
 import Component from "./components/Component";
+import Memo from "./components/Memo";
 import ReducerComp from "./components/Reducer";
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
       <p>This is a simple React application.</p>
       <Component />
       <ReducerComp />
+      <Memo />
     </div>
   );
 };
