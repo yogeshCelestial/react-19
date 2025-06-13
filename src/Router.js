@@ -7,6 +7,7 @@ import Memo from "./components/Memo";
 import WithFooterLayout from "./components/Footer";
 import UseCallbackComp from "./components/UseCallback";
 import SuspenseLazy from "./components/SuspenseLazy";
+import UseRef from "./components/Ref";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,14 @@ const router = createBrowserRouter([
       </FirstContextComponent>
     ),
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "/useRef",
+    element: (
+      <WithFooterLayout>
+        <UseRef />
+      </WithFooterLayout>
+    ),
   },
   {
     path: "/useReducer",

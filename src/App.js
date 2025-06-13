@@ -13,6 +13,9 @@ const App = () => {
       <Typography variant="h5">See Example of - </Typography>
       <ul>
         <h3>Hooks - </h3>
+         <li>
+          <Link to="/useRef">useRef</Link>
+        </li>
         <li>
           <Link to="/useReducer">useReducer</Link>
         </li>
