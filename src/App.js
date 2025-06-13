@@ -18,6 +18,9 @@ const App = () => {
         <li>
           <Link to="/useMemo">useMemo</Link>
         </li>
+        <li>
+          <Link to="/useCallback">useCallback & React.memo</Link>
+        </li>
       </ul>
     </div>
   );

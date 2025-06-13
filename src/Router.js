@@ -5,6 +5,7 @@ import { FirstContextComponent } from "./hooks";
 import ReducerComp from "./components/Reducer";
 import Memo from "./components/Memo";
 import WithFooterLayout from "./components/Footer";
+import UseCallbackComp from "./components/UseCallback";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,14 @@ const router = createBrowserRouter([
     element: (
       <WithFooterLayout>
         <Memo />
+      </WithFooterLayout>
+    ),
+  },
+  {
+    path: "/useCallback",
+    element: (
+      <WithFooterLayout>
+        <UseCallbackComp />
       </WithFooterLayout>
     ),
   },
