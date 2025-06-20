@@ -8,6 +8,7 @@ import WithFooterLayout from "./components/Footer";
 import UseCallbackComp from "./components/UseCallback";
 import SuspenseLazy from "./components/SuspenseLazy";
 import UseRef from "./components/Ref";
+import CheckBoxesGrid from "./CheckboxesGrid";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,14 @@ const router = createBrowserRouter([
     element: (
       <WithFooterLayout>
         <SuspenseLazy />
+      </WithFooterLayout>
+    ),
+  },
+  {
+    path: "/handleTenThousandCheckboxes",
+    element: (
+      <WithFooterLayout>
+        <CheckBoxesGrid />
       </WithFooterLayout>
     ),
   },

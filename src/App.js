@@ -29,6 +29,9 @@ const App = () => {
         <li>
           <Link to="/suspenseLazy">Suspense & Lazy</Link>
         </li>
+         <li>
+          <Link to="/handleTenThousandCheckboxes">Handle Ten Thousand Checkboxes</Link>
+        </li>
       </ul>
     </div>
   );
