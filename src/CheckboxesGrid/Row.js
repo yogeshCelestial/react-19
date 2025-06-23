@@ -12,7 +12,7 @@ const Row = React.memo(
           <Grid container direction="column" size={2}>
             <Checkbox
               checked={!!status}
-              onChange={() => cbHandler(String(index + 1), status)}
+              onChange={() => cbHandler(index)}
             />
           </Grid>
           <Grid container direction="column" size={4}>

@@ -7,19 +7,26 @@ import { FixedSizeList } from "react-window";
 
 function CheckBoxesGrid() {
   console.log("Parent Rendered ---------->");
-  const [cbStatus, setCbStatus] = React.useState(new Array(10000).fill(""));
+  const [cbStatus, setCbStatus] = React.useState(new Array(10000).fill(false));
+  const [topChecked, setTopChecked] = React.useState(false);
 
   const handleSelectAll = () => {
     console.log("Select All Clicked!");
-    const status = rows.map((r) => String(r.id));
+    let status;
+    if (!topChecked) {
+      status = rows.map((r) => true);
+    } else {
+      status = new Array(10000).fill(false);
+    }
     setCbStatus(status);
+    setTopChecked(!topChecked);
   };
 
-  const cbHandler = React.useCallback((index, currentStatus) => {
+  const cbHandler = React.useCallback((index) => {
     console.log("Checkbox clicked!");
     setCbStatus((prevItems) => {
       const updated = [...prevItems];
-      updated[Number(index) - 1] = currentStatus ? "" : index;
+      updated[index] = !prevItems[index];
       return updated;
     });
   }, []);
@@ -48,7 +55,7 @@ function CheckBoxesGrid() {
       <Box width="50%">
         <Grid container spacing={2} direction="row" textAlign="center">
           <Grid container direction="column" size={2}>
-            <Checkbox onChange={handleSelectAll} />
+            <Checkbox checked={topChecked} onChange={handleSelectAll} />
           </Grid>
           <Grid container direction="column" size={4}>
             <Typography fontWeight={600}>First Name</Typography>
